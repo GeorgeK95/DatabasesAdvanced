@@ -1,14 +1,20 @@
 package model;
 
+import annotations.Column;
+import annotations.Id;
+
 import java.time.LocalDate;
 
 /**
  * Created by George-Lenovo on 7/12/2017.
  */
 public class User {
+    @Id
     private long id;
+    @Column(name = "user_name")
     private String name;
     private int age;
+    @Column(name = "registration_date")
     private LocalDate dateOfRegistration;
 
     @Override
@@ -20,9 +26,9 @@ public class User {
     }
 
     public User(String name, int age, LocalDate dateOfRegistration) {
-        this.name = name;
-        this.age = age;
-        this.dateOfRegistration = dateOfRegistration;
+        this.setName(name);
+        this.setAge(age);
+        this.setDateOfRegistration(dateOfRegistration);
     }
 
     public long getId() {

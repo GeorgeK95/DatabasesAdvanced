@@ -1,11 +1,16 @@
 package db;
 
+import annotations.Column;
+import annotations.Entity;
+import annotations.Id;
+
 import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 
@@ -27,15 +32,16 @@ public class EntityManager implements DBContext {
     }
 
     private <E> boolean doCreate(E entity, Field primary) throws SQLException, IllegalAccessException {
+        checkPrimaryKey(entity);
         try (Statement statement = connection.createStatement()) {
-            String q = "CREATE TABLE IF NOT EXISTS " + entity.getClass().getSimpleName().toLowerCase() + " ( ";
+            String q = "CREATE TABLE IF NOT EXISTS " + tableName(entity) + " ( ";
             Field[] fields = entity.getClass().getDeclaredFields();
 
             int n = fields.length;
             for (int i = 0; i < n; i++) {
                 Field field = fields[i];
                 field.setAccessible(true);
-                String name = field.getName();
+                String name = columnName(field);
                 q += name + " " + getDBType(primary, field);
 
                 if (i != n - 1) {
@@ -86,7 +92,7 @@ public class EntityManager implements DBContext {
     }
 
     private <E> boolean update(E entity, Field primary) throws SQLException, IllegalAccessException {
-        String updateQuery = "UPDATE " + this.getTableName(entity.getClass()) + " SET ";
+        String updateQuery = "UPDATE " + tableName(entity) + " SET ";
         String whereQuery = " WHERE ";
 
         Field[] fields = entity.getClass().getDeclaredFields();
@@ -96,10 +102,10 @@ public class EntityManager implements DBContext {
             Field field = fields[i];
             field.setAccessible(true);
 
-            String name = field.getName();
+            String name = columnName(field);
             Object val = field.get(entity);
 
-            if (field.getName().equals(primary.getName())) {
+            if (isPrimaryKey(field)) {
                 whereQuery += name + " = '" + val + "' ";
             }
 
@@ -121,7 +127,7 @@ public class EntityManager implements DBContext {
     }
 
     private <E> boolean insert(E entity, Field primary) throws SQLException, IllegalAccessException {
-        String insertQuery = "INSERT INTO " + this.getTableName(entity.getClass()) + " ( ";
+        String insertQuery = "INSERT INTO " + tableName(entity) + " ( ";
 
         Field[] fields = entity.getClass().getDeclaredFields();
         String insertColumns = "";
@@ -132,8 +138,8 @@ public class EntityManager implements DBContext {
             Field field = fields[i];
             field.setAccessible(true);
 
-            if (!field.getName().equals(primary.getName())) {
-                insertColumns += field.getName();
+            if (!isPrimaryKey(field)) {
+                insertColumns += columnName(field);
                 Object val = field.get(entity);
                 values += "'" + val + "'";
 
@@ -242,7 +248,7 @@ public class EntityManager implements DBContext {
         if (rs != null) {
             for (Field f : table.getDeclaredFields()) {
                 f.setAccessible(true);
-                String colName = f.getName();
+                String colName = columnName(f);
 
                 if (f.getType().equals(String.class)) {
                     f.set(entity, rs.getString(colName));
@@ -258,5 +264,36 @@ public class EntityManager implements DBContext {
 
             }
         }
+    }
+
+    private <E> String tableName(E entity) {
+        Entity annotation = entity.getClass().getAnnotation(Entity.class);
+
+        if (annotation != null) {
+            return annotation.name();
+        }
+
+        return entity.getClass().getSimpleName().toLowerCase();
+    }
+
+    private String columnName(Field field) {
+        Column annotation = field.getAnnotation(Column.class);
+
+        if (annotation != null) {
+            return annotation.name();
+        }
+
+        return field.getName();//getClass().getSimpleName().toLowerCase();
+    }
+
+    private boolean isPrimaryKey(Field field) {
+        return field.isAnnotationPresent(Id.class);
+    }
+
+    private <E> void checkPrimaryKey(E entity) {
+        Arrays.stream(entity.getClass().getDeclaredFields())
+                .filter(f -> f.isAnnotationPresent(Id.class))
+                .findFirst()
+                .orElseThrow(() -> new IllegalStateException("No primary key in " + entity.getClass().getSimpleName()));
     }
 }
