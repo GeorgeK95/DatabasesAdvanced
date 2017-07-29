@@ -37,7 +37,7 @@ public class ConsoleRunner implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-//        seedDatabase();
+        seedDatabase();
 //        task_3();
 //        task_4();
 
