@@ -37,7 +37,7 @@ public class ConsoleRunner implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        seedDatabase();
+//        seedDatabase();
 //        task_3();
 //        task_4();
 
@@ -58,15 +58,22 @@ public class ConsoleRunner implements CommandLineRunner {
 //        task_14();
 //        task_15();
 //        task_16();
-        //FAIL
 //        task_17();
     }
 
     private void task_17() throws SQLException {
         Scanner in = new Scanner(System.in);
-        String fName = "ui";//in.nextLine();
-        String lName = "ui";//in.nextLine();
-        int opalq = authorService.booksCountByAuthor(fName, lName);
+        String[] full = in.nextLine().split("\\s+");
+        printResult(full[0], full[1]);
+    }
+
+    private void printResult(String fName, String lName) throws SQLException {
+        int foundCount = authorService.booksCountByAuthor(fName, lName);
+        if (foundCount == 1) {
+            System.out.printf("%s %s has written %d book", fName, lName, foundCount);
+        } else {
+            System.out.printf("%s %s has written %d books", fName, lName, foundCount);
+        }
     }
 
     private void task_16() {

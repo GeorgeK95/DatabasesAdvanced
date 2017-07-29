@@ -42,5 +42,7 @@ public interface BookService<Book, Long> extends ServiceInterface<Book, Long> {
     void increaseBookCopies(int copiesCount, Date date);
 
     void removeBooksWithLowerCopies(@Param(value = "param") int copiesCount);
+
     Integer findBooksCountWithLowerCopies(@Param(value = "param") int copiesCount);
+
 }

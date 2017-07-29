@@ -28,6 +28,4 @@ public interface AuthorDao extends JpaRepository<Author, Long>/*, AuthorService<
             "order by sum(b.copies) desc")
     List<Object[]> totalBooksCopied();
 
-//    @Query("call booksCount(:fName,:lName )")
-//    Integer booksCountByAuthor(@Param(value = "fName") String first, @Param(value = "lName") String last);
 }

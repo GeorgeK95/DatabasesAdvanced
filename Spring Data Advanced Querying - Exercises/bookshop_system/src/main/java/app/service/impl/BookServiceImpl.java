@@ -102,7 +102,6 @@ public class BookServiceImpl implements BookService<Book, Long> {
         return dao.findBooksCountWithLowerCopies(copiesCount);
     }
 
-
     @Override
     public Book findById(Long id) {
         return dao.findOne(id);

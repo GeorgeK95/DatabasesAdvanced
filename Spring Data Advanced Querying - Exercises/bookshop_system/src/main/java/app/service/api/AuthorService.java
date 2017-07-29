@@ -14,5 +14,4 @@ public interface AuthorService<Author, Long> extends ServiceInterface<Author, Lo
     List<Object[]> totalBooksCopied();
 
     Integer booksCountByAuthor(String first, String last) throws SQLException;
-//    Author fancyMethodName(arg1, arg2);
 }
