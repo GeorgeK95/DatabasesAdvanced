@@ -5,6 +5,7 @@ import app.annotations.password.Password;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -21,7 +22,7 @@ public class User {
     @Password
     private String password;
     private String fullName;
-    @ManyToMany(mappedBy = "owners")
+    @ManyToMany(mappedBy = "owners", fetch = FetchType.EAGER)
     private Set<Game> games;
     private boolean isAdmin;
 
@@ -96,5 +97,22 @@ public class User {
 
     public void setAdmin(boolean admin) {
         isAdmin = admin;
+    }
+
+    public void removeGame(String title) {
+        Iterator<Game> iter = games.iterator();
+
+        while (iter.hasNext()) {
+            String str = iter.next().getTitle();
+
+            if (str.equals(title))
+                iter.remove();
+        }
+
+//        for (Game game : games) {
+//            if (game.getTitle().equals(title)) {
+//                this.games.remove(game);
+//            }
+//        }
     }
 }

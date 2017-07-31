@@ -7,9 +7,10 @@ import app.annotations.url.Url;
 import app.annotations.video.Video;
 
 import javax.persistence.*;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.Digits;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -27,8 +28,9 @@ public class Game {
     @Url
     private String url;
     @Price(digitsAfterDecPlate = 1)
+    @Digits(integer = 18, fraction = 1)
     private BigDecimal size;
-    @Price
+    @Price(message = "Invalid size format.")
     private BigDecimal price;
     @Description
     private String description;
@@ -60,6 +62,7 @@ public class Game {
         this.price = price;
         this.description = description;
         this.releaseDate = releaseDate;
+        this.owners = new HashSet<>();
     }
 
     public Long getId() {
