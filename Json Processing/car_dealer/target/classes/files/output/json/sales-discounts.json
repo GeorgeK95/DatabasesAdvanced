@@ -1,0 +1,11 @@
+{
+  "car": {
+    "make": "Skoda",
+    "model": "Citigo",
+    "travelledDistance": 214647.0
+  },
+  "customerName": "Marcelle Griego",
+  "discount": 0.0,
+  "price": 3682.91,
+  "priceWithDiscount": 0.0
+}

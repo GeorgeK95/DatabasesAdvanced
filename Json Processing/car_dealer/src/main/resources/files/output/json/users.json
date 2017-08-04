@@ -1,0 +1,12 @@
+[
+  {
+    "fullName": "Tester Testerov",
+    "email": "test@abv.bg",
+    "password": "123456asd@T"
+  },
+  {
+    "fullName": "Tester2 Testerov2",
+    "email": "test2@abv.bg",
+    "password": "123456asd@Tsecond"
+  }
+]
