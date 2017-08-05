@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<categories>
+    <category name="Fashion">
+        <products-count>4</products-count>
+        <average-price>550.765</average-price>
+        <total-revenue>2203.06</total-revenue>
+    </category>
+    <category name="Electronics">
+        <products-count>4</products-count>
+        <average-price>721.3275</average-price>
+        <total-revenue>2885.31</total-revenue>
+    </category>
+    <category name="Sports">
+        <products-count>3</products-count>
+        <average-price>882.75</average-price>
+        <total-revenue>2648.25</total-revenue>
+    </category>
+    <category name="Drugs">
+        <products-count>3</products-count>
+        <average-price>868.61</average-price>
+        <total-revenue>2605.83</total-revenue>
+    </category>
+    <category name="Business">
+        <products-count>2</products-count>
+        <average-price>969.705</average-price>
+        <total-revenue>1939.41</total-revenue>
+    </category>
+    <category name="Garden">
+        <products-count>2</products-count>
+        <average-price>1388.695</average-price>
+        <total-revenue>2777.39</total-revenue>
+    </category>
+    <category name="Adult">
+        <products-count>2</products-count>
+        <average-price>1134.55</average-price>
+        <total-revenue>2269.1</total-revenue>
+    </category>
+</categories>

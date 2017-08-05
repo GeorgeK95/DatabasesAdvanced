@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+    <customer>
+        <id>29</id>
+        <birth-date>1960-10-01 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>28</id>
+        <birth-date>1963-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>17</id>
+        <birth-date>1970-05-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>16</id>
+        <birth-date>1972-02-02 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>27</id>
+        <birth-date>1975-07-01 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>8</id>
+        <birth-date>1975-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>10</id>
+        <birth-date>1976-10-01 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>11</id>
+        <birth-date>1977-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>14</id>
+        <birth-date>1980-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>15</id>
+        <birth-date>1981-10-03 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>26</id>
+        <birth-date>1982-08-01 03:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>4</id>
+        <birth-date>1982-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>25</id>
+        <birth-date>1983-10-01 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>7</id>
+        <birth-date>1984-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>5</id>
+        <birth-date>1985-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>6</id>
+        <birth-date>1985-12-21 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>24</id>
+        <birth-date>1986-07-01 03:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>12</id>
+        <birth-date>1987-10-01 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>13</id>
+        <birth-date>1988-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>3</id>
+        <birth-date>1990-10-04 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>2</id>
+        <birth-date>1990-10-04 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>19</id>
+        <birth-date>1992-03-02 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>30</id>
+        <birth-date>1992-03-02 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>21</id>
+        <birth-date>1992-11-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>1</id>
+        <birth-date>1993-11-20 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>20</id>
+        <birth-date>1994-04-04 03:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>23</id>
+        <birth-date>1994-06-01 03:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>18</id>
+        <birth-date>1994-10-01 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>9</id>
+        <birth-date>1995-10-01 02:00:00.0</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>22</id>
+        <birth-date>1995-10-05 02:00:00.0</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+</customers>
