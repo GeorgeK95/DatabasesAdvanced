@@ -5,12 +5,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @XmlRootElement(name = "people")
-//@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.FIELD)
 public class PeopleDto {
-
+    @XmlElement(name = "person")
     private List<PersonDto> personDtos;
 
-    @XmlElement(name = "person")
+
     public List<PersonDto> getPersonDtos() {
         return personDtos;
     }
