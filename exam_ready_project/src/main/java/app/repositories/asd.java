@@ -1,5 +1,8 @@
 package app.repositories;
 
-public interface asd /*extends JpaRepository<>*/ {
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface asd /*extends JpaRepository<Class,Long>*/ {
 
 }
