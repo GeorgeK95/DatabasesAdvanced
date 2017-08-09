@@ -1,4 +1,4 @@
-package app.dao;
+package app.repositories;
 
 public interface asd /*extends JpaRepository<>*/ {
 
