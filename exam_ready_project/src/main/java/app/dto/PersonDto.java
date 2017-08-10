@@ -16,7 +16,8 @@ public class PersonDto {
     private String firstName;
 
     @Expose
-    @SerializedName(value = "phoneJsonDtos")
+    @SerializedName("asddasdas")
+//    @SerializedName(value = "phoneJsonDtos")
     @XmlElementWrapper(name = "phone_numbers")
     @XmlElement(name = "phone_number")
     private Set<PersonDto> phoneNumbers;

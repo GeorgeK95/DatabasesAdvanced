@@ -1,15 +1,16 @@
 package app.dto;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.google.gson.annotations.Expose;
+
+import javax.xml.bind.annotation.*;
 import java.util.List;
 
-@XmlRootElement(name = "people")
+@XmlRootElement(name = "")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class PeopleDto {
-    @XmlElement(name = "person")
+    @XmlElement(name = "")
+    @XmlAttribute(name = "")
+    @Expose
     private List<PersonDto> personDtos;
 
 

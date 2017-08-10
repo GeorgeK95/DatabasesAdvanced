@@ -6,11 +6,11 @@ public interface ServiceInterface<E, K> {
 
     E findById(K id);
 
-    void remove(E object);
+//    void remove(E object);
 
     List<E> findAll();
 
     void save(E object);
 
-    void saveList(List<E> object);
+//    void saveList(List<E> object);
 }
