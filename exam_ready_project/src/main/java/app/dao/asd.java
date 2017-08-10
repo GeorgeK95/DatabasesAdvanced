@@ -1,4 +1,4 @@
-package app.repositories;
+package app.dao;
 
 import org.springframework.stereotype.Repository;
 
