@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<anomalies>
+    <anomaly id="1" origin-planet="Voyager-10" teleport-planet="Kepler-1">
+        <victim name="Vox Populi"/>
+        <victim name="Baron Newhousen"/>
+        <victim name="Antra Foul"/>
+    </anomaly>
+    <anomaly id="2" origin-planet="Alpha-N20" teleport-planet="Kepler-3">
+        <victim name="Saine"/>
+    </anomaly>
+    <anomaly id="3" origin-planet="Kepler-6" teleport-planet="Kepler-1">
+        <victim name="Pokolri Paputo"/>
+    </anomaly>
+    <anomaly id="4" origin-planet="Kepler-3" teleport-planet="Kepler-6">
+        <victim name="Qort Xurst"/>
+    </anomaly>
+    <anomaly id="5" origin-planet="Indigo-3" teleport-planet="Voyager-10">
+        <victim name="Eifell Sync"/>
+    </anomaly>
+    <anomaly id="6" origin-planet="Indigo-3" teleport-planet="Alpha-N20">
+        <victim name="Zukhar Thurc"/>
+    </anomaly>
+    <anomaly id="7" origin-planet="Indigo-3" teleport-planet="Voyager-10">
+        <victim name="Dante"/>
+    </anomaly>
+    <anomaly id="8" origin-planet="Kepler-3" teleport-planet="Kepler-1">
+        <victim name="Kaliowe Okalinaine"/>
+        <victim name="Eifell Sync"/>
+    </anomaly>
+    <anomaly id="9" origin-planet="Voyager-11" teleport-planet="Alpha-N20">
+        <victim name="Eifell Sync"/>
+    </anomaly>
+    <anomaly id="10" origin-planet="Kepler-3" teleport-planet="Kepler-6">
+        <victim name="Moria Bane"/>
+        <victim name="Vox Populi"/>
+    </anomaly>
+    <anomaly id="11" origin-planet="Alpha-N20" teleport-planet="Indigo-3">
+        <victim name="Moria Bane"/>
+    </anomaly>
+    <anomaly id="12" origin-planet="Alpha-N20" teleport-planet="Kepler-3"/>
+    <anomaly id="13" origin-planet="Alpha-N20" teleport-planet="Indigo-3">
+        <victim name="Ixel Bane"/>
+    </anomaly>
+    <anomaly id="14" origin-planet="Kepler-1" teleport-planet="Alpha-N20">
+        <victim name="Viria Destr"/>
+        <victim name="Vox Populi"/>
+        <victim name="Eifell Sync"/>
+        <victim name="Pokolri Paputo"/>
+        <victim name="Dante"/>
+    </anomaly>
+    <anomaly id="15" origin-planet="Alpha-N20" teleport-planet="Kepler-1">
+        <victim name="Moria Bane"/>
+        <victim name="Eifell Sync"/>
+    </anomaly>
+    <anomaly id="19" origin-planet="Kepler-3" teleport-planet="Voyager-10">
+        <victim name="Eifell Sync"/>
+    </anomaly>
+    <anomaly id="20" origin-planet="Kepler-6" teleport-planet="Alpha-N20">
+        <victim name="Vox Populi"/>
+        <victim name="Eifell Sync"/>
+    </anomaly>
+    <anomaly id="21" origin-planet="Indigo-3" teleport-planet="Kepler-1">
+        <victim name="Moria Bane"/>
+        <victim name="Vox Populi"/>
+        <victim name="Eifell Sync"/>
+        <victim name="Ixel Bane"/>
+    </anomaly>
+    <anomaly id="22" origin-planet="Voyager-11" teleport-planet="Indigo-3">
+        <victim name="Antra Foul"/>
+    </anomaly>
+    <anomaly id="23" origin-planet="Voyager-10" teleport-planet="Voyager-11">
+        <victim name="Moria Bane"/>
+        <victim name="Saine"/>
+    </anomaly>
+</anomalies>
