@@ -8,5 +8,6 @@ public class asd {
     @JoinTable(name = "cars_parts", joinColumns = {@JoinColumn(name = "car_id")},
             inverseJoinColumns = {@JoinColumn(name = "part_id")})*/
 
-//    throw new IllegalArgumentException("Anomaly must have origin planet");
+    //    throw new IllegalArgumentException("Anomaly must have origin planet");
+
 }
